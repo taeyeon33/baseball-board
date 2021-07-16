@@ -1,0 +1,154 @@
+:root {
+    --alertColor: #721c24;
+    --alertback: #f8d7da;
+    --alertborder: #f5c6cb;
+    --salertColor: #155724;
+    --salertback: #d4edda;
+    --salertborder: #c3e6cb;
+    --borderColor: #e1e1e1;
+}
+
+#page {
+    height: 500px;
+}
+
+#topVisualImg {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/balls.jpg) top center no-repeat fixed;
+}
+
+#topVisualImg>h1 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-51%);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.lrPage {
+    height: auto;
+    padding: 55px 0 75px;
+}
+
+.lrBox {
+    width: 455px;
+    height: 540px;
+    margin: 20px auto;
+    border: 1px solid var(--borderColor);
+}
+
+.form {
+    width: 75%;
+    margin: 60px auto;
+}
+
+#loginForm>* {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.bottomBox {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid var(--borderColor);
+}
+
+.bottomBox {
+    font-size: 12px;
+}
+
+.alertBox {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.alert-danger {
+    color: var(--alertColor);
+    background-color: var(--alertback);
+    border: 1px solid var(--alertborder);
+}
+
+.alert-success {
+    color: var(--salertColor);
+    background-color: var(--salertback);
+    border: 1px solid var(--salertborder);
+}
+
+
+/* idpwLost */
+
+#findPage {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+
+#findPageMenu {
+    width: 65%;
+    height: 50px;
+    display: flex;
+}
+
+#findPageMenu>li {
+    width: 33%;
+    height: 100%;
+}
+
+#findPageMenu>li>a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#findPageMenu>li>a.selected {
+    background-color: #000;
+    color: #fff;
+}
+
+.find {
+    width: 65%;
+    height: 350px;
+    border: 1px solid var(--borderColor);
+    overflow-y: hidden;
+}
+
+.find>* {
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+}
+
+#list {
+    margin-top: 80px;
+    height: 100px;
+    overflow-y: scroll;
+}
+
+#list::-webkit-scrollbar,
+textarea::-webkit-scrollbar {
+    width: 10px;
+}
+
+#list::-webkit-scrollbar-thumb,
+textarea::-webkit-scrollbar-thumb {
+    background-color: #000;
+    background-clip: padding-box;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}

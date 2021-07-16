@@ -1,0 +1,292 @@
+:root {
+    --red: #f52a2a;
+    --gray: #484850;
+    --light: #f3f4f7;
+    --dark: #23242b;
+    --txtdark: #222;
+    --txtgray7: #777;
+    --txtgray8: #888;
+    --txtgraya: #aaa;
+    --txtgrayc: #ccc;
+    --borderColor: #e1e1e1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+#container {
+    width: 100%;
+}
+
+
+/* header */
+
+header {
+    width: 88%;
+    height: 75px;
+    padding: 0 35px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transition: width .3s, top .2s;
+    transform: translateX(-50%);
+    z-index: 20;
+    border-bottom: 1px solid var(--borderColor);
+    background-color: #fff;
+}
+
+header.scroll {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+}
+
+header>* {
+    height: 100%;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+#logo>img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+#logo p {
+    margin-top: -8px;
+}
+
+ul {
+    font-weight: bold;
+}
+
+ul>li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    width: 500px;
+    font-size: 18px;
+}
+
+#loginMenu {
+    width: 200px;
+}
+
+#loginMenu>li {
+    margin: 0 10px;
+}
+
+#loginMenu>li:nth-child(1)>a {
+    max-width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.color-red {
+    color: var(--red);
+}
+
+.color-red:hover {
+    color: var(--red);
+}
+
+#loginMenu>span {
+    height: 95%;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    color: var(--txtgrayc);
+}
+
+a {
+    color: var(--txtdark);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--txtdark);
+    text-decoration: none;
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 200px;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--txtgray8);
+    background-color: var(--dark);
+}
+
+footer>p {
+    margin: 0;
+}
+
+
+/* mainPage */
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+section:not(#mainPage):nth-child(3) {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    border-left: 1px solid var(--borderColor);
+    border-right: 1px solid var(--borderColor);
+}
+
+#visualPage {
+    height: 830px;
+}
+
+#visualImg {
+    width: 1800px;
+    margin: 0 auto;
+}
+
+#visualImg>img {
+    width: 100%;
+    height: 830px;
+    object-fit: cover;
+    object-position: 0 -160px;
+    filter: brightness(80%);
+}
+
+#mainPage {
+    width: 1800px;
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--light);
+}
+
+#mainPage>.img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+#center {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.centertextBox>p {
+    color: var(--txtgray7);
+}
+
+.centertextBox>h2 {
+    font-weight: bold;
+}
+
+.txtred {
+    color: var(--red);
+}
+
+.mainBox {
+    margin-top: 50px;
+}
+
+.boardBox {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.boardBlock {
+    width: 285px;
+    height: 260px;
+    padding: 25px;
+    cursor: default;
+    position: relative;
+    background-color: #fff;
+}
+
+.boardBlock>h5 {
+    font-weight: bold;
+}
+
+.boardBlock>h5>span {
+    color: var(--txtgraya);
+    font-size: 14px;
+}
+
+.boardBlock>ul>li {
+    font-weight: lighter;
+}
+
+.boardBlock>ul>li::before {
+    content: "";
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-color: var(--red);
+}
+
+.boardBlock>ul>li>a {
+    max-width: 220px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.moreBtn {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid var(--borderColor);
+}
+
+.moreBtn>a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--red);
+}
+
+
+/* adminPage */
+
+#adminPage {
+    min-height: 600px;
+    height: auto;
+    padding: 55px;
+}
+
+#userStopBtn {
+    border-radius: 0 5px 5px 0;
+}
+
+#userDelBtn {
+    border-radius: 5px;
+}

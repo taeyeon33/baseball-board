@@ -1,0 +1,180 @@
+:root {
+    --borderColor: #e1e1e1;
+    --theadColor: #fafafa;
+    --tableTopBorder: #666;
+    --tableBotBorder: #ddd;
+}
+
+#boardPage {
+    height: auto;
+    padding: 55px 55px 120px;
+    cursor: default;
+}
+
+#select {
+    height: 40px;
+    margin-top: 20px;
+}
+
+#select>span {
+    font-size: 14px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100px;
+    height: 25px;
+}
+
+#select>.box {
+    display: flex;
+    align-items: center;
+}
+
+.box>* {
+    margin: 0 5px;
+}
+
+.box .btn {
+    height: 25px;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+#writeBtn {
+    margin-left: 15px;
+}
+
+table {
+    border-top: 2px solid var(--tableTopBorder);
+}
+
+thead {
+    font-size: 14px;
+    background-color: var(--theadColor);
+    border-bottom: 1px solid var(--tableBotBorder);
+}
+
+tr>th {
+    height: 50px;
+    text-align: center;
+}
+
+.table thead th {
+    border-bottom: none;
+}
+
+tr>td:not(:nth-child(2)) {
+    text-align: center;
+}
+
+tr>td {
+    color: #666;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* write */
+
+#writePage {
+    height: auto;
+    min-height: 600px;
+    padding: 55px;
+}
+
+#content {
+    height: auto;
+    min-height: 500px;
+}
+
+#content img {
+    margin: 10px auto;
+}
+
+#content img:active {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.form-image-item-box {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+    position: relative;
+    background-color: #fafafa;
+}
+
+.form-image-item-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+
+/* view */
+
+#viewPage {
+    cursor: default;
+    height: auto;
+    padding: 55px 55px 90px;
+}
+
+#writeForm>.border {
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #f5f8f9;
+    border: 1px solid #e5e8ec;
+}
+
+#recomBtn {
+    width: 90px;
+    height: 50px;
+    padding: 0 .75rem;
+    border-radius: 25px;
+    margin-top: 20px;
+    float: right;
+    border: 1px solid #ddd;
+}
+
+textarea {
+    resize: none;
+}
+
+
+/* comment */
+
+#commentsBox {
+    width: 100%;
+    min-height: 200px;
+    margin-top: 120px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f5f8f9;
+    border: 1px solid #e5e8ec;
+}
+
+.com>b {
+    width: 20%;
+    max-width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.com>pre {
+    width: 65%;
+    white-space: pre-line;
+}
