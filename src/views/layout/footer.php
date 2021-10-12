@@ -1,5 +1,5 @@
 <footer>
-    <p>Tel : 010-7403-3435</p>
+    <p>Tel : 010-0000-0000</p>
     <p>Copyright ⓒ Baseball Gallery</p>
 </footer>
 
