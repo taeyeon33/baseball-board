@@ -34,11 +34,11 @@
                 <button class="clr btn" data-property="foreColor">
                     <i class="fas fa-tint"></i>
                 </button>
-                <div class="form-image-box">
+                <!-- <div class="form-image-box">
                     <button class="imgupload btn" id="form-image-add" data-property="image" disabled>
                         <i class="fas fa-file-image"></i>
                     </button>
-                </div>
+                </div> -->
             </div>
             <div contenteditable="true" id="content" class="form-control mb-3" spellcheck="false"></div>
         </div>

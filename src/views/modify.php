@@ -44,11 +44,11 @@
                 <button class="clr btn" data-property="foreColor">
                     <i class="fas fa-tint"></i>
                 </button>
-                <div class="form-image-box">
+                <!-- <div class="form-image-box">
                     <button class="imgupload btn" id="form-image-add" data-property="image">
                         <i class="fas fa-file-image"></i>
                     </button>
-                </div>
+                </div> -->
             </div>
             <div class="input-group">
             <div class="input-group-prepend">
