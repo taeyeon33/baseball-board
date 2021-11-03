@@ -14,8 +14,8 @@ class UserController extends MasterController
         $name = $_POST['name'];
         $password = $_POST['password'];
 
-        $sql = "SELECT * FROM users WHERE id = ?";
-        $user = DB::fetch($sql, [$id]);
+        $sql = "SELECT * FROM users WHERE id = ? OR name = ?";
+        $user = DB::fetch($sql, [$id, "관리자"]);
         if ($user) {
             echo "중복";
             return;

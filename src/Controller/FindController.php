@@ -36,8 +36,8 @@ class FindController extends MasterController
     public function idFind()
     {
         $name = $_POST['name'];
-        $sql = "SELECT * FROM users WHERE name = ?";
-        $list = DB::fetchAll($sql, [$name]);
+        $sql = "SELECT * FROM users WHERE name LIKE '%$name%'";
+        $list = DB::fetchAll($sql);
         if ($list) echo json_encode($list, JSON_UNESCAPED_UNICODE);
         else echo false;
     }

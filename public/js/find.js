@@ -41,10 +41,8 @@ class Find {
             url: "/idFind",
             method: "POST",
             data: { "name": name.value },
-            success: (e) => {
-                log(e);
+            success: e => {
                 list = JSON.parse(e);
-                log(list);
             }
         });
 
@@ -53,7 +51,8 @@ class Find {
                 const div = document.createElement("div");
                 div.classList.add("user");
                 const id = document.createElement("span");
-                id.innerHTML = x.id.substr(0, x.id.length - 2) + "**";
+                id.innerHTML = x.id.substr(0, Math.ceil(x.id.length / 2));
+                for (let i = Math.ceil(x.id.length / 2); i < x.id.length; i++) id.innerHTML += '*';
                 const name = document.createElement("span");
                 name.innerHTML = x.name;
                 div.appendChild(id);
