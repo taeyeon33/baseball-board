@@ -54,7 +54,7 @@
             <div class="input-group-prepend">
                     <span class="input-group-text">내용</span>
                 </div>
-                <div contenteditable="true" id="content" class="form-control mb-3" spellcheck="false"><?= nl2br($b->content) ?></div>
+                <div contenteditable="true" id="content" class="form-control" spellcheck="false"><?= nl2br($b->content) ?></div>
             </div>
         </div>
     </div>
